@@ -15,6 +15,7 @@ a{
   --liteblue: #5c9aa8;
   --blue: #243E5C;
   --white: #FFFFFF;
+  --darkblue:#247688;
 }
 
 /* TOP HEADER */
@@ -164,7 +165,7 @@ a{
 }
 
 .frmsubmit:hover {
-  background: #8b5538;
+  background: var(--darkblue);
 }
 /* BANNER */
 .banner {
@@ -1393,12 +1394,12 @@ background: var(--liteblue);
 }
 
 .expertise-list li a.active{
-  background: #b07d4f;
+  background: var(--liteblue);
   color: #fff;
 }
 /* BUTTON */
 .consult-btn {
-  background: #b07d4f;
+  background: var(--liteblue);
   color: #fff;
   border: none;
   padding: 5px 14px;
@@ -1433,7 +1434,7 @@ background: var(--liteblue);
 }
 
 .icon-list i {
-  color: #b07d4f;
+  color: var(--liteblue);
   margin-right: 8px;
 }
 
@@ -1444,7 +1445,7 @@ background: var(--liteblue);
   align-items: center;
   background: #fff;
   padding: 10px;
-  border-left: 3px solid #b07d4f;
+  border-left: 3px solid var(--liteblue);
 }
 .highlight-box p{
   margin-bottom: 0;
@@ -1606,14 +1607,14 @@ font-size: 3rem;
 
 .service-duration i {
     margin-right: 5px;
-    color: #b07d4f;
+    color: var(--liteblue);
 }
 
 /* PRICE */
 .price {
     font-size: 18px;
     font-weight: bold;
-    color: #b07d4f;
+    color: var(--liteblue);
     margin: 10px 0;
 }
 
@@ -1659,12 +1660,12 @@ font-size: 3rem;
 
 /* CONTINUE */
 .btn-continue {
-    background: #b07d4f;
+    background: var(--liteblue);
     color: #fff;
 }
 
 .btn-continue:hover {
-    background: #8c5f35;
+    background: var(--darkblue);
 }
 
 /* VIEW LINK */
@@ -1677,7 +1678,7 @@ font-size: 3rem;
 .view-service a {
     text-decoration: none;
     font-size: 14px;
-    color: #b07d4f;
+    color: var(--liteblue);
     font-weight: 500;
 }
 
@@ -1917,7 +1918,7 @@ z-index: 1021;
 }
 
 .place-order-btn:hover {
-  background: #8b5538;
+  background: var(--darkblue);
 }
 
 /* thankyousection */
@@ -2577,3 +2578,31 @@ overflow: hidden;
     padding: 20px;
   }
 }
+
+
+
+/* my style faq */
+
+    .accordion-button:not(.collapsed) {
+        color: #fff;
+        background-color: var(--darkblue);
+
+    }
+    .accordion-button:focus {
+        box-shadow: none !important;
+    }
+    .accordion-button{
+    color:#fff;
+background-color: var(--darkblue);
+}
+.accordion-button::after {
+    background-color: #fff;
+    border-radius: 50%;
+}
+@media (max-width:576px) {
+    .accordion-button{
+font-size: 14px;
+} 
+}
+
+/* my style faq */
