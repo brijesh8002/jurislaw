@@ -1,0 +1,733 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Juris Solution | Trademark & Copyright</title>
+  <link rel="icon" type="image/png" href="images/logo.png">
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous" />
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  </head>
+
+<body>
+  <!-- ===== TOP HEADER (DESKTOP ONLY) ===== -->
+  <section class="topestnav d-md-block d-none">
+    <div class="container d-flex justify-content-between align-items-center py-2">
+      <!-- Social Icons -->
+     <div class="social">
+        <a href=""><i class="fab fa-facebook-f me-3"></i></a>
+        <a href="mailto:contactus@asgadvocates.com"><i class="fa-regular fa-envelope me-3"></i></a>
+        <a href="https://www.instagram.com/advocatesahilgandass/?igsh=MXZua3pjaG12M2Z5MQ%3D%3D#"><i class="fab fa-instagram me-3"></i></a>
+      </div>
+
+      <!-- Top Links -->
+      <div class="top-links">
+        <a href="privacypolicy.html" class="text-white text-decoration-none ms-3">Privacy Policy</a>
+        <a href="terms-conditions.html" class="text-white text-decoration-none ms-3">Terms & Conditions</a>
+        <a href="faq.html" class="text-white text-decoration-none ms-3">FAQ</a>
+      </div>
+    </div>
+  </section>
+  <!-- ===== NAVBAR ===== -->
+   <nav class="navbar navbar-expand-xl navbar-dark custom-nav sticky-top">
+    <div class="container">
+
+      <!-- Logo -->
+      <a class="navbar-brand" href="index.html">
+        <img src="images/logo.png" height="45">
+      </a>
+
+      <!-- Mobile Toggle -->
+       <div class="d-xl-none d-flex gap-3 align-items-center justify-content-center">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <!-- <a href="userdashboard.html"><i class="fa-solid fa-user" style="font-size: 1.5rem; color: #fff;"></i></a> -->
+</div>
+
+      <!-- Menu -->
+      <div class="collapse navbar-collapse" id="mainNav">
+        <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-3">
+
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About Us</a>
+          </li>
+
+          <!-- Services -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
+              Services
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="trademark.html">Trademark & Copyright</a></li>
+              <li><a class="dropdown-item" href="company-incorporation.html">Company Incorporation</a></li>
+              <li><a class="dropdown-item" href="#">Registration & Licenses</a></li>
+            </ul>
+          </li>
+
+          <!-- RERA -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
+              Rera Complaint
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Possession Complaint</a></li>
+              <li><a class="dropdown-item" href="#">Refund Complaint</a></li>
+              <li><a class="dropdown-item" href="#">Compensation Complaint</a></li>
+              <li><a class="dropdown-item" href="#">Rera Agreement Drafting</a></li>
+            </ul>
+          </li>
+
+          <!-- Debt Services -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
+              Debt Settlement
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Civil Proceedings</a></li>
+              <li><a class="dropdown-item" href="#">Legal Consultation</a></li>
+              <li><a class="dropdown-item" href="#">Anti-Harassment</a></li>
+              <li><a class="dropdown-item" href="#">Debt Reduction</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="blogs.html">Blogs</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="btn login-btn ms-lg-2" href="login.html"><i class="fa-solid fa-user"></i><span class="d-lg-none"> Profile</span></a>
+          </li>
+
+          <li class="nav-item mt-3 mt-lg-0">
+            <a class="btn login-btn ms-lg-2" href="javascript:void(0)" onclick="openAddToCart()"><i class="fa-solid fa-cart-shopping"></i><span class="d-lg-none"> Cart</span></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+<!-- add to cart start -->
+<div class="addtocart">
+  <!-- Header -->
+  <div class="cart-header">
+    <h4>Add to Cart</h4>
+    <i class="fa-solid fa-xmark close-btn" onclick="closeAddToCart()"></i>
+  </div>
+
+  <!-- Cart Content -->
+  <div class="cart-body">
+
+    <!-- Services -->
+    <div class="servsection">
+      <div class="cart-item">
+        <span>Trademark & Copyright</span>
+        <div>
+          <span>₹3,000</span>
+          <i class="fa-solid fa-trash remove-item"></i>
+        </div>
+      </div>
+
+      <div class="cart-item">
+        <span>Company Incorporation</span>
+        <div>
+          <span>₹3,000</span>
+          <i class="fa-solid fa-trash remove-item"></i>
+        </div>
+      </div>
+    </div>
+
+    <!-- Total Section -->
+    <div class="totalsection">
+      <div>
+        <span>Subtotal</span>
+        <span>₹6,000</span>
+      </div>
+      <div>
+        <span>Tax (5%)</span>
+        <span>₹300</span>
+      </div>
+      <div class="total">
+        <span>Total</span>
+        <span>₹6,300</span>
+      </div>
+
+      <a href="checkout.html" class="frmsubmit w-100">Proceed to Checkout <i class="fa-solid fa-arrow-right"></i></a>
+    </div>
+
+  </div>
+</div>
+  <!-- add to cart end -->
+
+  <!-- ===== PAGE BANNER ===== -->
+  <section class="page-banner">
+    <div class="container text-center">
+      <h1>Trademark & Copyright</h1>
+      <p>Home / Trademark & Copyright</p>
+    </div>
+  </section>
+
+  <section class="law-page pt-5">
+    <div class="container">
+
+      <!-- HEADER -->
+      <div class="text-center mb-5">
+        <h2>Start Using TM in Just 1 Day</h2>
+        <p>
+          Apply for Trademark Registration Online with Juris Solutions.
+          We are India’s leading platform providing online registration services.
+        </p>
+        <span class="practice-line"></span>
+      </div>
+
+      <div class="row overflow-hidden">
+
+        <!-- LEFT CONTENT -->
+        <div class="col-lg-6" data-aos="fade-right">
+
+          <h3 class="fw-bold">Trademark Registration</h3>
+          <p>
+            A Trademark is a distinctive sign, symbol, logo, word, phrase, design, or combination
+            that identifies and distinguishes goods or services of one business from another.
+          </p>
+
+          <!-- LIST -->
+          <div class="row">
+            <div class="col-md-6">
+              <ul class="icon-list">
+                <li><i class="fas fa-check"></i> Brand names</li>
+                <li><i class="fas fa-check"></i> Company names</li>
+                <li><i class="fas fa-check"></i> Logos</li>
+              </ul>
+            </div>
+
+            <div class="col-md-6">
+              <ul class="icon-list">
+                <li><i class="fas fa-check"></i> Taglines</li>
+                <li><i class="fas fa-check"></i> Product names</li>
+                <li><i class="fas fa-check"></i> Symbols / identifiers</li>
+              </ul>
+            </div>
+          </div>
+
+          <p>
+            Governed by the <strong>Trade Marks Act, 1999</strong>. Valid for 10 years and renewable indefinitely.
+            The process generally takes 8 to 18 months. You can start using ™ immediately after filing.
+          </p>
+
+        </div>
+
+        <!-- RIGHT CONTENT (FORM) -->
+        <div class="col-lg-6 mb-4" data-aos="fade-left">
+          <div class="sidebar-box">
+            <h5 class="fw-bold mb-4">Free Consultation</h5>
+
+            <form>
+              <input type="text" class="form-control mb-3" placeholder="Name">
+              <input type="email" class="form-control mb-3" placeholder="Email">
+              <input type="tel" class="form-control mb-3" placeholder="Mobile">
+              <textarea class="form-control mb-3" placeholder="Message"></textarea>
+              <button class="consult-btn">Send Query</button>
+            </form>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- FEES SECTION -->
+      <div class="mt-5">
+        <h5 class="fw-bold">Government Fees</h5>
+
+        <table class="table table-bordered">
+          <thead>
+            <tr>
+              <th>Type</th>
+              <th>Fee</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Individual / Startup</td>
+              <td>₹4,500</td>
+            </tr>
+            <tr>
+              <td>Company / LLP</td>
+              <td>₹9,000</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <p class="small text-muted">
+          * Fees may change as per government updates.
+        </p>
+
+        <div class="d-flex align-items-center justify-content-center">
+          <a class="btn login-btn" href="javascript:void(0)" onclick="openAddToCart()">Get Service Now</a>
+        </div>
+      </div>
+
+      <!-- DOCUMENTS REQUIRED -->
+      <div class="text-center mt-5">
+        <h3 class="fw-bold">Documents Required</h3>
+        <span class="practice-line"></span>
+      </div>
+
+      <div class="row g-2 my-5 docreqs text-center">
+        <div class="col-lg col-6" data-aos="fade-up">
+          <div>
+            <img src="images/docreq.png" alt="">
+            <div>Company Name</div>
+          </div>
+        </div>
+
+        <div class="col-lg col-6" data-aos="fade-up">
+          <div>
+            <img src="images/docreq2.png" alt="">
+            <div>Business Type</div>
+          </div>
+        </div>
+
+        <div class="col-lg col-6" data-aos="fade-up">
+          <div>
+            <img src="images/docreq3.png" alt="">
+            <div>Business Details</div>
+          </div>
+        </div>
+
+        <div class="col-lg col-6" data-aos="fade-up">
+          <div>
+            <img src="images/docreq4.png" alt="">
+            <div>Logo Name</div>
+          </div>
+        </div>
+
+        <div class="col-lg col-6" data-aos="fade-up">
+          <div>
+            <img src="images/docreq5.png" alt="">
+            <div>Business Address</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- HOW WE WORK -->
+      <div class="text-center mt-5">
+        <h3 class="fw-bold">How We Work</h3>
+        <span class="practice-line"></span>
+      </div>
+
+      <div class="row g-3 howwewrk text-center">
+        <div class="col" data-aos="fade-right">
+          <div class="d-flex flex-column">
+            <span>01</span>
+            <span>Create a search report</span>
+          </div>
+        </div>
+
+        <div class="col" data-aos="fade-right">
+          <div class="d-flex flex-column">
+            <span>02</span>
+            <span>Draft the authorization letter</span>
+          </div>
+        </div>
+
+        <div class="col" data-aos="fade-right">
+          <div class="d-flex flex-column">
+            <span>03</span>
+            <span>Upload required documents</span>
+          </div>
+        </div>
+
+        <div class="col" data-aos="fade-right">
+          <div class="d-flex flex-column">
+            <span>04</span>
+            <span>File the TM application</span>
+          </div>
+        </div>
+
+        <div class="col" data-aos="fade-right">
+          <div class="d-flex flex-column">
+            <span>05</span>
+            <span>Start using TM</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="law-page pt-5">
+    <div class="container">
+
+      <!-- HEADER -->
+      <div class="text-center mb-5">
+        <h2>Protect Your Creativity: 360° Copyrights Protection Services</h2>
+        <p>
+          Juris Solutionsoffers a complete range of copyright Services in Delhi to meet diverse client needs.
+        </p>
+        <span class="practice-line"></span>
+      </div>
+
+      <div class="row overflow-hidden">
+
+        <!-- LEFT CONTENT -->
+        <div class="col-lg-6" data-aos="fade-right">
+
+          <h3 class="fw-bold">Copyright Registration</h3>
+          <p>
+            Copyright protects original literary, artistic, musical, dramatic, and creative works.
+          </p>
+
+          <!-- LIST -->
+          <div class="row">
+            <div class="col-md-6">
+              <ul class="icon-list">
+                <li><i class="fas fa-check"></i> Books and articles</li>
+                <li><i class="fas fa-check"></i> Software and computer programs</li>
+                <li><i class="fas fa-check"></i> Website content </li>
+                <li><i class="fas fa-check"></i> Architectural works</li>
+              </ul>
+            </div>
+
+            <div class="col-md-6">
+              <ul class="icon-list">
+                <li><i class="fas fa-check"></i> Photographs</li>
+                <li><i class="fas fa-check"></i> Paintings and artistic works</li>
+                <li><i class="fas fa-check"></i> Films and videos</li>
+                <li><i class="fas fa-check"></i> Music compositions</li>
+              </ul>
+            </div>
+          </div>
+
+          <p>
+            Copyright protection in India is governed by the <strong>Copyright Act, 1957.</strong>.Although copyright
+            exists automatically once the work is created, registration provides stronger legal evidence of ownership in
+            case of disputes or infringement. The registration process generally takes 2 to 4 months, subject to
+            objections or discrepancies during examination.
+          </p>
+
+        </div>
+
+        <!-- RIGHT CONTENT (FORM) -->
+        <div class="col-lg-6 mb-4" data-aos="fade-left">
+          <div class="sidebar-box">
+            <h5 class="fw-bold mb-4">Free Consultation</h5>
+
+            <form>
+              <input type="text" class="form-control mb-3" placeholder="Name">
+              <input type="email" class="form-control mb-3" placeholder="Email">
+              <input type="tel" class="form-control mb-3" placeholder="Mobile">
+              <textarea class="form-control mb-3" placeholder="Message"></textarea>
+              <button class="consult-btn">Send Query</button>
+            </form>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- FEES SECTION -->
+      <div class="mt-5">
+        <h5 class="fw-bold">Government Fees</h5>
+
+        <table class="table table-bordered">
+          <thead>
+            <tr>
+              <th>Type</th>
+              <th>Fee</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Literary / Dramatic Work</td>
+              <td>₹500</td>
+            </tr>
+            <tr>
+              <td>Artistic Work</td>
+              <td>₹500</td>
+            </tr>
+            <tr>
+              <td>Musical Work</td>
+              <td>₹500</td>
+            </tr>
+            <tr>
+              <td>Software / Computer Program</td>
+              <td>₹500</td>
+            </tr>
+            <tr>
+              <td>Sound Recording</td>
+              <td>₹2,000</td>
+            </tr>
+            <tr>
+              <td>Cinematograph Film</td>
+              <td>₹5,000</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <p class="small text-muted">
+          * Fees may change as per government updates.
+        </p>
+
+        <div class="d-flex align-items-center justify-content-center">
+          <a class="btn login-btn" href="javascript:void(0)" onclick="openAddToCart()">Get Service Now</a>
+        </div>
+      </div>
+
+      <!-- DOCUMENTS REQUIRED -->
+      <div class="text-center mt-5">
+        <h3 class="fw-bold">Documents Required</h3>
+        <span class="practice-line"></span>
+      </div>
+
+      <div class="row g-2 my-5 docreqs text-center">
+        <div class="col-lg col-6" data-aos="fade-up">
+          <div>
+            <img src="images/docreq.png" alt="">
+            <div>Company Name</div>
+          </div>
+        </div>
+
+        <div class="col-lg col-6" data-aos="fade-up">
+          <div>
+            <img src="images/docreq2.png" alt="">
+            <div>Business Type</div>
+          </div>
+        </div>
+
+        <div class="col-lg col-6" data-aos="fade-up">
+          <div>
+            <img src="images/docreq3.png" alt="">
+            <div>Business Details</div>
+          </div>
+        </div>
+
+        <div class="col-lg col-6" data-aos="fade-up">
+          <div>
+            <img src="images/docreq4.png" alt="">
+            <div>Logo Name</div>
+          </div>
+        </div>
+
+        <div class="col-lg col-6" data-aos="fade-up">
+          <div>
+            <img src="images/docreq5.png" alt="">
+            <div>Business Address</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- HOW WE WORK -->
+      <div class="text-center mt-5">
+        <h3 class="fw-bold">How We Work</h3>
+        <span class="practice-line"></span>
+      </div>
+
+      <div class="row pb-5 g-3 howwewrk text-center">
+        <div class="col" data-aos="fade-right">
+          <div class="d-flex flex-column">
+            <span>01</span>
+            <span>Filing Application</span>
+          </div>
+        </div>
+
+        <div class="col" data-aos="fade-right">
+          <div class="d-flex flex-column">
+            <span>02</span>
+            <span>Diary Number Issued</span>
+          </div>
+        </div>
+
+        <div class="col" data-aos="fade-right">
+          <div class="d-flex flex-column">
+            <span>03</span>
+            <span>30-day waiting period</span>
+          </div>
+        </div>
+
+        <div class="col" data-aos="fade-right">
+          <div class="d-flex flex-column">
+            <span>04</span>
+            <span>File the © application</span>
+          </div>
+        </div>
+
+        <div class="col" data-aos="fade-right">
+          <div class="d-flex flex-column">
+            <span>05</span>
+            <span>Start using Copyright</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- key difference between trademark and copyright -->
+  <!-- FEES SECTION -->
+  <div class="my-5 container">
+    <h2 class="fw-bold">Difference Between Trademark and Copyright</h5>
+
+      <table class="table table-bordered">
+        <thead>
+          <tr>
+            <th>Basis</th>
+            <th>Trademark</th>
+            <th>Copyright</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Purpose</td>
+            <td>Protects brand identity</td>
+            <td>Protects creative works</td>
+          </tr>
+          <tr>
+            <td>Governing Law</td>
+            <td>Trade Marks Act, 1999</td>
+            <td>Copyright Act, 1957</td>
+          </tr>
+          <tr>
+            <td>Protection</td>
+            <td>Brand names, logos, symbols</td>
+            <td>Books, music, art, software, films</td>
+          </tr>
+          <tr>
+            <td>Duration</td>
+            <td>Duration 10 years (renewable indefinitely) Lifetime of author + 60 years</td>
+            <td>Lifetime of author + 60 years</td>
+          </tr>
+          <tr>
+            <td>Symbol</td>
+            <td>™ / ®</td>
+            <td>©</td>
+          </tr>
+        </tbody>
+      </table>
+
+
+  </div>
+
+  <!-- whatsapp icon  start-->
+  <div class="call-icon">
+        <a href="tel:8368282220"><img src="images/icons8-call-48.png" alt=""></a>
+    </div> 
+    <div class="whatsapp-icon">
+        <a href="https://wa.me/8368282220" target="_blank"><img src="images/icons8-whatsapp-48.png" alt=""></a>
+    </div>
+  <!-- whatsapp icon  end-->
+
+  <!-- FREE CONSULTATION start -->
+
+  <div class="free-consult-fixed-div">
+ <h5 class="fw-bold" onclick="showing()">Free Consultation <i class="fa-solid fa-caret-left"></i></h5>
+    <div class="sidebar-box">
+
+      <form>
+        <input type="text" class="form-control mb-3" placeholder="Name">
+        <input type="email" class="form-control mb-3" placeholder="Email">
+        <input type="tel" class="form-control mb-3" placeholder="Mobile">
+        <textarea class="form-control mb-3" placeholder="Message"></textarea>
+        <button class="consult-btn">Send Query</button>
+      </form>
+    </div>
+   
+  </div>
+  <!-- FREE CONSULTATION end -->
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer pt-5">
+    <div class="container">
+      <div class="row gy-4">
+
+        <!-- LOGO -->
+        <div class="col-lg-3 col-md-6">
+          <img src="images/logo.png" onclick="location.href='index.html'" class="footer-logo mb-3" alt="Juris Solution">
+          <p>
+            We understand that legal issues can be stressful and complex.
+            Our mission is to provide trusted and expert legal guidance
+            with clarity and care.
+          </p>
+          <p class="mb-0"><strong>Email:</strong> contactus@asgadvocates.com</p>
+          <p><strong>Phone:</strong> +91 8368282220</p>
+
+          <div class="footer-social mb-3">
+            <a href="https://www.instagram.com/advocatesahilgandass/?igsh=MXZua3pjaG12M2Z5MQ%3D%3D#"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/advocatesahilgandass/?igsh=MXZua3pjaG12M2Z5MQ%3D%3D#"><i class="fab fa-instagram"></i></a>
+            <a href="https://wa.me/8368282220" target="_blank"><i class="fab fa-whatsapp"></i></a>
+            <a href="mailto:contactus@asgadvocates.com"><i class="fa-regular fa-envelope"></i></a>
+          </div>
+        </div>
+
+        <!-- QUICK LINKS -->
+        <div class="col-lg-3 col-md-6">
+          <h5>Quick Links</h5>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="blogs.html">Blogs</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="login.html">Login</a></li>
+            <li><a href="privacypolicy.html">Privacy & Policies</a></li>
+            <li><a href="terms-conditions.html">Terms & Conditions</a></li>
+            <li><a href="faq.html">FAQ's</a></li>
+          </ul>
+        </div>
+
+        <!-- SERVICES -->
+        <div class="col-lg-3 col-md-6">
+          <h5>Services</h5>
+          <ul class="footer-links">
+             <li><a href="services.html">Services</a></li>
+            <li><a href="rera_complaint.html">Rera Complaint</a></li>
+            <li><a href="debt_settlement.html">Debt Settlement</a></li>
+            <li><a href="trademark.html">Trademark & Copyright</a></li>
+            <li><a href="company-incorporation.html">Company Incorporation</a></li>
+            <li><a href="#">Registration & Licenses</a></li>
+            <li><a href="#">Possession Complaint</a></li>
+          </ul>
+        </div>
+
+         <!-- SERVICES -->
+        <div class="col-lg-3 col-md-6">
+          <h5>Services</h5>
+          <ul class="footer-links">
+            <li><a href="#">Refund Complaint</a></li>
+            <li><a href="#">Compensation Complaint</a></li>
+            <li><a href="#">Rera Agreement Drafting</a></li>
+            <li><a href="#">Civil Proceedings</a></li>
+            <li><a href="#">Legal Consultation</a></li>
+            <li><a href="#">Anti-Harassment</a></li>
+            <li><a href="#">Debt Reduction</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- BOTTOM -->
+    <div class="footer-bottom mt-4">
+      © 2026 Juris Solutions | Designed & Developed by
+      <a href="https://tssgtech.com" target="_blank">Tssg-Tech</a>
+    </div>
+  </footer>
+  <div class="blur-overlay"></div>
+  <script src="js/script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
+      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+  AOS.init();
+</script>
+</body>
+
+</html>
