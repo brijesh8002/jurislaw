@@ -1,4 +1,23 @@
 
+// load header
+fetch("./include/header.html")
+  .then((res) => res.text())
+  .then((data) => {
+    document.getElementById("header").innerHTML = data;
+
+    // after loading header, attach events
+    initNavbar();
+  });
+
+// load footer
+fetch("./include/footer.html")
+  .then((res) => res.text())
+  .then((data) => {
+    document.getElementById("footer").innerHTML = data;
+  });
+
+
+
 
 // SLIDER
 let slides = document.querySelectorAll(".slide");
@@ -90,4 +109,15 @@ window.onclick = function(e) {
   if (e.target === popup) {
     popup.style.display = "none";
   }
+}
+
+
+
+// querry from
+function toggleQueryForm() {
+  const form = document.getElementById("lawFixedForm");
+
+  if (!form) return;
+
+  form.classList.toggle("active");
 }
