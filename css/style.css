@@ -863,10 +863,10 @@ background: var(--gold);
     right: 30px;
 }
 .call-icon{
-   bottom: 110px;
+   bottom: 83px;
 }
 .whatsapp-icon{
-   bottom: 50px;
+   bottom: 30px;
 }
 .whatsapp-icon img, .call-icon img{
     width: 50px;
